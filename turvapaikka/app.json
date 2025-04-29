@@ -1,0 +1,71 @@
+{
+  "expo": {
+    "name": "Turvapaikka",
+    "slug": "turvapaikka",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/ikoni-2.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "assetBundlePatterns": [
+      "assets/images/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/ikoni-2.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.turvapaikka.turvapaikka"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/ikoni-2.png",
+      "router": {
+        "origin": false,
+        "headTags": [],
+        "unstable_src": "app"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/ikoni-2.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 24,
+            "compileSdkVersion": 35
+          },
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "4028f1d1-f516-4d80-bc3b-70f1e743116b"
+      }
+    }
+  }
+}
